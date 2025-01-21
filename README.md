@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in VBScript related to implicit type conversion. The `f` function compares two variables, `a` and `b`, without explicit type checking. When `a` is a number and `b` is a string, a type mismatch error occurs during the comparison. This is because VBScript attempts implicit conversion, which fails in this case.
+
+The `bug.vbs` file contains the buggy code. The `bugSolution.vbs` file provides a corrected version that explicitly checks for numeric types before comparison, thereby avoiding the type mismatch error.
